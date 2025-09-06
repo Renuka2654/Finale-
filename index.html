@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoTracker</title>
+    <!-- Link to your CSS file for styling -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>EcoTracker Dashboard</h1>
+
+        <section class="data-input">
+            <h2>Track Your Eco-Impact</h2>
+            <!-- Input fields for various eco-related data -->
+            <form id="eco-form">
+                <label for="activity">Activity:</label>
+                <input type="text" id="activity" name="activity" required>
+
+                <label for="value">Value (e.g., kg CO2, kWh, items):</label>
+                <input type="number" id="value" name="value" step="0.01" required>
+
+                <label for="date">Date:</label>
+                <input type="date" id="date" name="date" required>
+
+                <button type="submit">Add Entry</button>
+            </form>
+        </section>
+
+        <section class="data-display">
+            <h2>Your Eco-Footprint</h2>
+            <div id="eco-summary">
+                <!-- Summary of eco-impact data will be displayed here -->
+                <p>Total Carbon Emissions: <span id="total-carbon">0</span> kg</p>
+                <p>Trees Planted Equivalent: <span id="trees-equivalent">0</span></p>
+            </div>
+            <ul id="eco-list">
+                <!-- List of individual eco-entries will be displayed here -->
+            </ul>
+        </section>
+    </div>
+
+    <!-- Link to your JavaScript file for interactivity -->
+    <script src="script.js"></script>
+</body>
+</html>
